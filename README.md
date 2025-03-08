@@ -1,50 +1,54 @@
-# React + TypeScript + Vite
+# React Vite Tailwind Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is a template for creating a project using React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Usage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository:
 
-## Expanding the ESLint configuration
+   ```sh
+   git clone https://github.com/your-username/react-vite-template.git
+   cd react-vite-template
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. Install project dependencies:
 
-- Configure the top-level `parserOptions` property like this:
+   ```sh
+   npm install
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
+
+## Code Quality Tools
+
+This template comes with pre-configured ESLint and Prettier to ensure code quality and consistent formatting.
+
+### ESLint
+
+ESLint is set up to check and enforce code quality rules.
+
+```sh
+# Run ESLint to check your code
+npm run lint
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Prettier
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
+Prettier is configured to ensure consistent code formatting.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
+```sh
+# Format your code with Prettier
+npm run format
 ```
+
+### VS Code Integration
+
+For the best development experience, install the ESLint and Prettier extensions for VS Code:
+
+1. [ESLint Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+2. [Prettier Extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+The project includes recommended VS Code settings to enable format-on-save and other helpful features.
