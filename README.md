@@ -14,12 +14,12 @@ This repository is a template for creating a project using React, Vite, and Tail
 2. Install project dependencies:
 
    ```sh
-   npm install
+   pnpm install
    ```
 
 3. Start the development server:
    ```sh
-   npm run dev
+   pnpm run dev
    ```
 
 ## Code Quality Tools
@@ -32,7 +32,7 @@ ESLint is set up to check and enforce code quality rules.
 
 ```sh
 # Run ESLint to check your code
-npm run lint
+pnpm run lint
 ```
 
 ### Prettier
@@ -41,7 +41,7 @@ Prettier is configured to ensure consistent code formatting.
 
 ```sh
 # Format your code with Prettier
-npm run format
+pnpm run format
 ```
 
 ### VS Code Integration

@@ -6,9 +6,9 @@
 
 ```
 react-vite-template/
-├── public/                  # 静的ファイル
+├── public/                 # 静的ファイル
 │   └── vite.svg            # Viteロゴファイル
-├── src/                     # ソースコード
+├── src/                    # ソースコード
 │   ├── components/         # 再利用可能なReactコンポーネント
 │   ├── features/           # 機能別コンポーネント・ロジック
 │   ├── pages/              # ページコンポーネント
@@ -53,9 +53,9 @@ react-vite-template/
 ## 開発コマンド
 
 ```bash
-npm run dev      # 開発サーバー起動
-npm run build    # プロダクションビルド
-npm run lint     # ESLintでコードチェック
-npm run format   # Prettierでコードフォーマット
-npm run preview  # ビルド結果のプレビュー
+pnpm run dev      # 開発サーバー起動
+pnpm run build    # プロダクションビルド
+pnpm run lint     # ESLintでコードチェック
+pnpm run format   # Prettierでコードフォーマット
+pnpm run preview  # ビルド結果のプレビュー
 ```
